@@ -1,0 +1,26 @@
+[project]
+name = "backend"
+version = "0.1.0"
+description = "AI Project Backend with LangGraph Workflows"
+authors = [{name = "AI Assistant", email = "assistant@example.com"}]
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "langchain",
+    "langchain-community",
+    "langgraph",
+    "langsmith",
+    "pandas",
+    "python-multipart",
+    "pypdf"
+]
+
+[tool.setuptools.package-data]
+"*" = ["**/*"]
+
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["workflows", "routers", "prompts"]

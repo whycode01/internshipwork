@@ -1,0 +1,71 @@
+GRADE - CARD
+Bachelor of Technology
+(Computer Science and Engineering)
+Name of the Student
+:
+Gaurav Mishra
+Permanent Register Number
+1032221713
+Father's Name
+Pradeep Kumar Mishra
+Mother's Name
+Priti Mishra
+Semester
+05
+Month and Year
+November 2024
+Sl
+No.
+Course
+Code
+Credits
+Course Title
+Grade
+Awarded
+Point
+1
+CET3003B
+2
+Full Stack Development
+A+
+18
+CET4001B
+4
+Bigdata Technologies
+36
+3
+CET2007B
+Artificial Intelligence and Expert Systems
+A
+32
+CET3004B
+Information and Cyber Security
+5
+CET3005B
+Data Engineering
+24
+6
+FET2003B
+Employment Skills Development
+8
+7
+FET2004B
+Innovation and Entrepreneurship
+O
+10
+Medium of Instruction :
+English
+Credits Earned
+19
+GPA
+8.42
+CGPA
+8.45
+Semester /
+Trimester
+8.25
+8.30
+8.35
+Remark :
+PASS
+Note : This is a system generated document for student reference.

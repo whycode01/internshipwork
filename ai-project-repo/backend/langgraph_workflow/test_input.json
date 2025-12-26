@@ -1,0 +1,97 @@
+{
+  "candidate_id": "test_candidate_001",
+  "candidate_name": "John Doe",
+  "raw_transcript": "Interviewer: Good morning John, thank you for joining us today. Can you start by telling us about your background and experience with Python development?\n\nJohn: Good morning! Thank you for having me. I've been working as a Python developer for about 4 years now. I started my career at a small startup where I worked on web applications using Django and Flask. In my current role at TechCorp, I've been focusing on building APIs and microservices using FastAPI. I've also worked extensively with databases like PostgreSQL and MongoDB, and I'm comfortable with cloud platforms like AWS and Docker for deployment.\n\nInterviewer: That's great experience. Can you walk us through a challenging technical problem you've solved recently?\n\nJohn: Sure! Recently, we had a performance issue with one of our APIs that was processing large datasets. The response time was around 8-10 seconds for queries involving more than 100,000 records. I analyzed the problem and found that we were making multiple database calls and not utilizing database indexing effectively. I redesigned the query to use JOIN operations instead of multiple queries, added proper indexes, and implemented caching using Redis. This reduced the response time to under 2 seconds. I also added monitoring to track API performance going forward.\n\nInterviewer: Excellent problem-solving approach. How do you handle working in a team environment, especially when there are conflicting opinions about technical approaches?\n\nJohn: I believe collaboration is key in software development. When there are different technical opinions, I try to listen to all perspectives first. I usually suggest we evaluate each approach based on factors like scalability, maintainability, performance, and development time. If needed, we can create small prototypes to test different solutions. I'm always open to learning from others and I'm not attached to my ideas if there's a better approach. In my current team, we have regular code reviews and architecture discussions which help us make better collective decisions.\n\nInterviewer: How do you stay updated with new technologies and best practices in Python development?\n\nJohn: I'm quite proactive about continuous learning. I follow several Python blogs and newsletters, participate in online communities like Stack Overflow and Reddit's Python community. I also attend local Python meetups when possible and have participated in a few PyCon conferences. I try to work on side projects to experiment with new libraries and frameworks. Recently, I've been exploring async programming with FastAPI and learning about machine learning with scikit-learn. I also contribute to open-source projects occasionally, which helps me learn from other developers' code.\n\nInterviewer: That's impressive dedication to learning. What attracts you most about working for our company?\n\nJohn: I've researched your company extensively, and I'm really excited about your mission to democratize data analytics. The technical challenges you're solving with large-scale data processing align perfectly with my interests. I'm particularly drawn to your engineering culture of innovation and the fact that you invest heavily in employee growth and learning. From what I've read, your team values code quality and engineering excellence, which matches my own values. I'd love to contribute to building scalable systems that can impact thousands of users.\n\nInterviewer: Thank you John. Do you have any questions for us?\n\nJohn: Yes, I'd like to know more about the team structure and how you approach technical decision-making. Also, what are the biggest technical challenges the team is currently facing? And finally, what opportunities are there for professional development and growth within the engineering organization?",
+  
+  "resume_text": "John Doe\nSenior Python Developer\nEmail: john.doe@email.com | Phone: (555) 123-4567\nLinkedIn: linkedin.com/in/johndoe | GitHub: github.com/johndoe\n\nPROFESSIONAL SUMMARY\nExperienced Python Developer with 4+ years of expertise in building scalable web applications, APIs, and microservices. Proven track record in performance optimization, database design, and cloud deployment. Strong background in agile development practices and team collaboration.\n\nTECHNICAL SKILLS\n• Programming Languages: Python, JavaScript, SQL\n• Frameworks: Django, Flask, FastAPI, React\n• Databases: PostgreSQL, MongoDB, Redis\n• Cloud & DevOps: AWS (EC2, S3, RDS), Docker, Kubernetes\n• Tools: Git, Jenkins, Pytest, Celery\n\nPROFESSIONAL EXPERIENCE\n\nSenior Python Developer | TechCorp Inc. | 2022 - Present\n• Developed and maintained 10+ REST APIs serving 1M+ requests daily using FastAPI\n• Reduced API response times by 75% through query optimization and caching implementation\n• Led migration of legacy Django applications to microservices architecture\n• Mentored 3 junior developers and conducted code reviews\n• Implemented CI/CD pipelines reducing deployment time by 60%\n\nPython Developer | StartupXYZ | 2020 - 2022\n• Built full-stack web applications using Django and React\n• Designed and implemented PostgreSQL database schemas for 5+ projects\n• Collaborated with product team to deliver features for 50,000+ active users\n• Implemented automated testing achieving 90% code coverage\n• Participated in on-call rotation and incident response procedures\n\nJunior Software Developer | WebSolutions Ltd. | 2019 - 2020\n• Developed web scraping tools processing 100K+ data points daily\n• Created data visualization dashboards using Python and Plotly\n• Fixed bugs and added features to existing Flask applications\n• Participated in daily standups and sprint planning meetings\n\nEDUCATION\nBachelor of Science in Computer Science | State University | 2019\n• Relevant Coursework: Data Structures, Algorithms, Database Systems, Software Engineering\n• Senior Project: Machine Learning model for predictive analytics (Python, scikit-learn)\n\nCERTIFICATIONS & ACHIEVEMENTS\n• AWS Certified Developer - Associate (2023)\n• PyCon Speaker - \"Building Scalable APIs with FastAPI\" (2023)\n• Contributor to 5+ open-source Python projects\n• Hackathon Winner - Best Technical Implementation (2022)",
+
+  "job_description": {
+    "title": "Senior Python Developer",
+    "department": "Engineering",
+    "experience_required": "3-5 years",
+    "technical_requirements": [
+      "Strong Python programming skills",
+      "Experience with web frameworks (Django, Flask, FastAPI)",
+      "Database experience (PostgreSQL, MongoDB)",
+      "API development and integration",
+      "Cloud platforms (AWS, Azure, GCP)",
+      "Version control with Git",
+      "Testing frameworks and practices"
+    ],
+    "responsibilities": [
+      "Design and develop scalable Python applications",
+      "Build and maintain REST APIs",
+      "Collaborate with cross-functional teams",
+      "Code review and mentoring junior developers",
+      "Performance optimization and troubleshooting",
+      "Participate in architecture decisions"
+    ],
+    "soft_skills": [
+      "Strong communication skills",
+      "Problem-solving mindset",
+      "Team collaboration",
+      "Continuous learning attitude",
+      "Leadership potential"
+    ]
+  },
+
+  "policy_template": {
+    "name": "Senior Python Developer Assessment Policy",
+    "assessment_criteria": {
+      "technical_skills": {
+        "weight": 35,
+        "subcriteria": [
+          "Python programming proficiency",
+          "Framework knowledge (Django, Flask, FastAPI)",
+          "Database design and optimization",
+          "API development",
+          "Cloud platform experience",
+          "Testing and debugging skills"
+        ]
+      },
+      "behavioral_competencies": {
+        "weight": 25,
+        "subcriteria": [
+          "Communication clarity",
+          "Problem-solving approach",
+          "Team collaboration",
+          "Leadership indicators",
+          "Learning agility"
+        ]
+      },
+      "experience_relevance": {
+        "weight": 25,
+        "subcriteria": [
+          "Years of relevant experience",
+          "Project complexity and scale",
+          "Technology stack alignment",
+          "Industry experience",
+          "Career progression"
+        ]
+      },
+      "cultural_fit": {
+        "weight": 15,
+        "subcriteria": [
+          "Company values alignment",
+          "Growth mindset",
+          "Adaptability",
+          "Innovation focus",
+          "Team culture fit"
+        ]
+      }
+    },
+    "scoring_guidelines": {
+      "excellent": "90-100 points",
+      "good": "80-89 points", 
+      "satisfactory": "70-79 points",
+      "needs_improvement": "60-69 points",
+      "unsatisfactory": "Below 60 points"
+    },
+    "decision_thresholds": {
+      "selected": 85,
+      "conditional": 70,
+      "under_review": 55,
+      "rejected": 0
+    }
+  }
+}

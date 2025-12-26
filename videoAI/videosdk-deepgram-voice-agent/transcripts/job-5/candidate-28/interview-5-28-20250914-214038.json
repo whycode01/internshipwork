@@ -1,0 +1,35 @@
+{
+  "interview_id": "0671bf4b-5e23-4c8e-9d75-6e90ed08a82c",
+  "meeting_id": "aexu-uxbu-ie4n",
+  "start_time": "2025-09-14T16:10:37.381429+00:00",
+  "job_id": "5",
+  "candidate_id": "28",
+  "end_time": "2025-09-14T16:10:38.481363+00:00",
+  "duration_total": 1.099934,
+  "participants": [
+    "Interviewer"
+  ],
+  "entries": [
+    {
+      "speaker": "System",
+      "message": "Interview started",
+      "timestamp": "16:10:37",
+      "duration_seconds": 2.8e-05,
+      "confidence": null,
+      "message_type": "system"
+    },
+    {
+      "speaker": "System",
+      "message": "Interview ended",
+      "timestamp": "16:10:38",
+      "duration_seconds": 1.099666,
+      "confidence": null,
+      "message_type": "system"
+    }
+  ],
+  "metadata": {
+    "agent_name": "Interviewer",
+    "job_id": "5",
+    "candidate_id": "28"
+  }
+}

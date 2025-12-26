@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+pydantic
+langchain_experimental
+presidio-anonymizer
+presidio-analyzer
+uuid
+aiosqlite
+Faker
+fuzzysearch

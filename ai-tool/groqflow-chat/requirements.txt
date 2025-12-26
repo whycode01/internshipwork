@@ -1,0 +1,17 @@
+# --- FastAPI backend ---
+fastapi
+uvicorn[standard]
+sqlalchemy
+python-jose[cryptography]
+passlib[bcrypt]
+bcrypt==4.0.1
+python-dotenv
+python-multipart
+aiofiles
+requests
+
+# --- Groq API client ---
+groq
+
+# --- Streamlit frontend ---
+streamlit

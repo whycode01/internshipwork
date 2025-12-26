@@ -1,0 +1,46 @@
+{
+  "history": [
+    {
+      "role": "user",
+      "type": "text",
+      "content": "Hey"
+    },
+    {
+      "role": "assistant",
+      "type": "text",
+      "content": "Hey! How's it going?"
+    },
+    {
+      "role": "user",
+      "type": "image_text",
+      "content": "what is in this image ?",
+      "image_path": "d950fb06-3d88-4ffc-8109-c8a90bedb1cf_89539bdaa3aedd952aec689e1ab2fcdd2b4e6fce7088f29d9421fa9f068711f7.jpg"
+    },
+    {
+      "role": "assistant",
+      "type": "text",
+      "content": "The image depicts the cover art for Grand Theft Auto VI, featuring a man and woman sitting on a car. The woman, dressed in a pink long-sleeve crop top and blue jeans, sits behind the man, who wears a white tank top and green pants. The title \"Grand Theft Auto\" is prominently displayed in large white letters at the top, while \"VI\" is written in stylized white letters at the bottom.\n\nIn the background, palm trees and buildings are visible, set against a vibrant sunset sky with hues of purple, orange, and pink. The overall atmosphere suggests a promotional image for the game, showcasing its characters and setting."
+    },
+    {
+      "role": "user",
+      "type": "image_text",
+      "content": "who is this?",
+      "image_path": "d950fb06-3d88-4ffc-8109-c8a90bedb1cf_b1fe93fca7b08e66c538b3ff7ff497415f8a7be6be0338ddc04c20e9800715fa.jpg"
+    },
+    {
+      "role": "assistant",
+      "type": "text",
+      "content": "The character in the image is Deadpool, a fictional superhero appearing in American comics published by Marvel Comics. He was created by writer/artist Rob Liefeld and first appeared in The New Mutants #98 in 1991.\n\n**Real Name:** Wade Wilson\n\n**Alias:** Deadpool, the Merc with a Mouth, Regenerating Degenerate\n\n**Notable Features:**\n\n* Red and black costume\n* Mask that covers his face\n* Regenerative healing factor\n* Sarcastic and humorous personality\n\n**Played by:** Ryan Reynolds in the live-action films, including the 2016 film \"Deadpool\" and its sequel \"Deadpool 2\" (2018). \n\nDeadpool is known for his:\n\n* Breaking of the fourth wall (addressing the audience directly)\n* Violent and dark humor\n* Regenerative abilities\n* Skilled fighter and swordsman\n\nHe has become a fan favorite in the Marvel Cinematic Universe (MCU) and is set to appear in the upcoming film \"Deadpool & Wolverine\" (2024)."
+    },
+    {
+      "role": "user",
+      "type": "text",
+      "content": "what all images uplaoded?"
+    },
+    {
+      "role": "assistant",
+      "type": "text",
+      "content": "You uploaded two images:\n\n1. An image that appears to be the cover art for Grand Theft Auto VI, featuring a man and woman sitting on a car.\n2. An image of Deadpool, a fictional superhero from the Marvel Comics universe."
+    }
+  ]
+}

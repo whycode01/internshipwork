@@ -1,0 +1,5 @@
+storage/
+__pycache__/
+lab_reviews.db
+README.md
+.gitignore

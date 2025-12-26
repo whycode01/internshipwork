@@ -1,0 +1,29 @@
+services:
+  anony:
+    build: ./anony-api
+    networks:
+      - appnet
+
+  backend:
+    build: ./backend
+    depends_on:
+      - anony
+    environment:
+      - API_URL=http://anony:8001/api/v1
+    ports:
+      - "8000:8000"
+    networks:
+      - appnet
+
+  frontend:
+    build: ./frontend
+    depends_on:
+      - backend
+    ports:
+      - "4173:4173"
+    networks:
+      - appnet
+
+networks:
+  appnet:
+    driver: bridge

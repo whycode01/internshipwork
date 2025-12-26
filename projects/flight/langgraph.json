@@ -1,0 +1,9 @@
+{
+  "dependencies": [
+    "."
+  ],
+  "graphs": {
+    "agent": "./flight_agent.py:create_graph"
+  },
+  "env": ".env"
+}

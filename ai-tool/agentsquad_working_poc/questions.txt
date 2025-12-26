@@ -1,0 +1,19 @@
+"What’s the weather in Paris, the time in Tokyo, and the latest news?"
+
+"Give me the current temperature in New York, the local time in London, and some headlines."
+
+"Tell me the time in Dubai, the weather in Delhi, and top news stories today."
+
+"I want the news, the weather in Berlin, and the time in Toronto.
+
+
+"Can you tell me the weather in Sydney, the local time in Moscow, and what's trending in the news?"
+
+"What's the current temperature in Los Angeles, the time in Shanghai, and the latest headlines?"
+
+"Give me an update on the weather in Chicago, the time in Mumbai, and top news stories today."
+
+"I'd like to know the time in Seoul, the weather in Rio, and some current news."
+
+"Tell me the current time in Bangkok, the weather in Istanbul, and what's new in the world."
+

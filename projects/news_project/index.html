@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsy McSpeaky - Headline Narrator</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E%F0%9F%93%B0%3C/text%3E%3C/svg%3E">
+
+    <link rel="stylesheet" href="/dist/tailwind.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+    <script src="navbar.js"></script>
+    <script src="news-card.js"></script>
+    <script src="avatar.js"></script>
+</head>
+
+<body class="bg-gray-50 min-h-screen">
+
+    <custom-navbar></custom-navbar>
+
+    <main class="container mx-auto px-4 py-8">
+
+        <section class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-gray-800 mb-4">Today's Headlines</h1>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">Listen to the latest news from India and its states with AI Avatar</p>
+        </section>
+
+        <!-- AI Avatar Section -->
+        <div class="flex justify-center mb-8" style="display: flex; justify-content: center; margin-bottom: 2rem;">
+            <div class="bg-white rounded-lg shadow-xl p-4 max-w-2xl w-full" style="background: white; border-radius: 0.5rem; box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1); padding: 1rem; max-width: 42rem; width: 100%;">
+                <div class="relative bg-gray-900 rounded-lg overflow-hidden" style="position: relative; background: #111827; border-radius: 0.5rem; overflow: hidden; aspect-ratio: 16/9; min-height: 400px;">
+                    <video 
+                        id="avatarVideo" 
+                        class="w-full h-full object-cover"
+                        autoplay 
+                        playsinline
+                        style="width: 100%; height: 100%; object-fit: cover; transform: scaleX(-1); display: none;"
+                    ></video>
+                    <div id="avatarLoading" class="absolute inset-0 flex items-center justify-center bg-gray-900" style="display: none; position: absolute; top: 0; left: 0; right: 0; bottom: 0; align-items: center; justify-content: center; background: #111827;">
+                        <div class="text-center text-white" style="text-align: center; color: white;">
+                            <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-white mx-auto mb-4" style="animation: spin 1s linear infinite; border-radius: 9999px; height: 3rem; width: 3rem; border-bottom: 2px solid white; margin: 0 auto 1rem;"></div>
+                            <p>Initializing AI Avatar...</p>
+                        </div>
+                    </div>
+                    <div id="avatarPlaceholder" class="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-blue-600 to-purple-600 text-white" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; display: flex; align-items: center; justify-content: center; background: linear-gradient(to bottom right, #2563eb, #9333ea); color: white;">
+                        <div class="text-center" style="text-align: center;">
+                            <i data-feather="video" class="mx-auto mb-4" style="width: 64px; height: 64px; margin: 0 auto 1rem;"></i>
+                            <p class="text-xl font-semibold" style="font-size: 1.25rem; font-weight: 600;">Click "Start Avatar" to begin</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4 flex justify-center space-x-4" style="margin-top: 1rem; display: flex; justify-content: center; gap: 1rem;">
+                    <button id="startAvatar" class="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-6 py-3 rounded-lg font-medium transition flex items-center" style="background: linear-gradient(to right, #2563eb, #9333ea); color: white; padding: 0.75rem 1.5rem; border-radius: 0.5rem; font-weight: 500; display: flex; align-items: center; border: none; cursor: pointer;">
+                        <i data-feather="video" class="mr-2" style="margin-right: 0.5rem;"></i> Start Avatar
+                    </button>
+                    <button id="stopAvatar" class="bg-gray-600 hover:bg-gray-700 text-white px-6 py-3 rounded-lg font-medium transition flex items-center hidden" style="background: #4b5563; color: white; padding: 0.75rem 1.5rem; border-radius: 0.5rem; font-weight: 500; display: none; align-items: center; border: none; cursor: pointer;">
+                        <i data-feather="video-off" class="mr-2" style="margin-right: 0.5rem;"></i> Stop Avatar
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex justify-center mb-8">
+            <div class="flex space-x-4">
+                <button id="fetchNews" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition flex items-center">
+                    <i data-feather="refresh-cw" class="mr-2"></i> Refresh News
+                </button>
+                <button id="playAll" class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-medium transition flex items-center">
+                    <i data-feather="play" class="mr-2"></i> Play All with Avatar
+                </button>
+                <button id="stopAll" class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-medium transition flex items-center">
+                    <i data-feather="stop-circle" class="mr-2"></i> Stop
+                </button>
+                <button id="voiceCommand" class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-medium transition flex items-center">
+                    <i data-feather="mic" class="mr-2"></i> Voice Command
+                </button>
+            </div>
+        </div>
+
+        <div id="newsContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
+        <div class="fixed bottom-4 right-4">
+            <div id="speechStatus" class="bg-white shadow-lg rounded-full p-3 hidden">
+                <div class="flex items-center">
+                    <i data-feather="mic" class="text-blue-600 mr-2"></i>
+                    <span class="text-sm font-medium">Speaking...</span>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+
+</body>
+</html>

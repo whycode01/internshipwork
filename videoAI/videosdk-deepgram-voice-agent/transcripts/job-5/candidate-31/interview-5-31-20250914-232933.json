@@ -1,0 +1,76 @@
+{
+  "interview_id": "7e78fcef-bddf-4ca3-aaa6-19905339c532",
+  "meeting_id": "k1ma-0t4l-t3n6",
+  "start_time": "2025-09-14T17:57:59.081250+00:00",
+  "job_id": "5",
+  "candidate_id": "31",
+  "end_time": "2025-09-14T17:59:33.802047+00:00",
+  "duration_total": 94.720797,
+  "participants": [
+    "Interviewer",
+    "User"
+  ],
+  "entries": [
+    {
+      "speaker": "System",
+      "message": "Interview started",
+      "timestamp": "17:57:59",
+      "duration_seconds": 4e-05,
+      "confidence": null,
+      "message_type": "system"
+    },
+    {
+      "speaker": "System",
+      "message": "User joined the interview",
+      "timestamp": "17:58:00",
+      "duration_seconds": 1.861489,
+      "confidence": null,
+      "message_type": "system"
+    },
+    {
+      "speaker": "Interviewer",
+      "message": "Hello! I'm Interviewer. Let's begin with our first question: Can you describe a situation where you had to apply financial planning and analysis skills to a real-world problem? How did you approach it, and what were the outcomes?",
+      "timestamp": "17:58:09",
+      "duration_seconds": 10.298115,
+      "confidence": null,
+      "message_type": "speech"
+    },
+    {
+      "speaker": "User",
+      "message": "I am new in this field.",
+      "timestamp": "17:58:33",
+      "duration_seconds": 34.290208,
+      "confidence": null,
+      "message_type": "speech"
+    },
+    {
+      "speaker": "User",
+      "message": "I don't know about financial planning.",
+      "timestamp": "17:58:36",
+      "duration_seconds": 37.273929,
+      "confidence": null,
+      "message_type": "speech"
+    },
+    {
+      "speaker": "User",
+      "message": "I have done software engineering.",
+      "timestamp": "17:58:58",
+      "duration_seconds": 59.455376,
+      "confidence": null,
+      "message_type": "speech"
+    },
+    {
+      "speaker": "System",
+      "message": "Interview ended",
+      "timestamp": "17:59:33",
+      "duration_seconds": 94.720419,
+      "confidence": null,
+      "message_type": "system"
+    }
+  ],
+  "metadata": {
+    "agent_name": "Interviewer",
+    "job_id": "5",
+    "candidate_id": "31"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "dependencies": ["../requirements.txt"],
+  "graphs": {
+    "interview_assessment_workflow": "./workflow.py:get_workflow"
+  },
+  "env": "../.env",
+  "config": {
+    "title": "Interview Assessment Workflow",
+    "description": "Multi-agent LangGraph workflow for comprehensive interview assessment with scoring and report generation",
+    "workflow_info": {
+      "agents": 8,
+      "scoring_system": "100-point weighted scale",
+      "decision_logic": {
+        "selected": "85+ points",
+        "conditional": "70-84 points", 
+        "under_review": "55-69 points",
+        "rejected": "<55 points"
+      },
+      "assessment_areas": {
+        "technical_skills": "35% weight",
+        "behavioral_competencies": "25% weight",
+        "experience_relevance": "25% weight",
+        "cultural_fit": "15% weight"
+      }
+    },
+    "sample_inputs": {
+      "candidate_id": "test_candidate_001",
+      "candidate_name": "John Doe",
+      "raw_transcript": "Full interview transcript with Q&A...",
+      "resume_text": "Candidate's resume content...",
+      "job_description": {
+        "title": "Senior Python Developer",
+        "technical_requirements": ["Python", "FastAPI", "PostgreSQL"],
+        "responsibilities": ["API development", "Code review"],
+        "soft_skills": ["Communication", "Problem-solving"]
+      },
+      "policy_template": {
+        "name": "Senior Developer Assessment Policy",
+        "assessment_criteria": {
+          "technical_skills": {"weight": 35},
+          "behavioral_competencies": {"weight": 25},
+          "experience_relevance": {"weight": 25},
+          "cultural_fit": {"weight": 15}
+        }
+      }
+    },
+    "agents_overview": [
+      {
+        "name": "DataPreprocessingAgent",
+        "purpose": "Parse and structure transcript, resume, and job data",
+        "output": "Structured data for downstream agents"
+      },
+      {
+        "name": "TechnicalSkillsAgent", 
+        "purpose": "Evaluate technical competencies and skill alignment",
+        "output": "Technical score (0-100) with evidence and gaps"
+      },
+      {
+        "name": "BehavioralAssessmentAgent",
+        "purpose": "Assess communication, leadership, and soft skills",
+        "output": "Behavioral score (0-100) with competency breakdown"
+      },
+      {
+        "name": "ExperienceRelevanceAgent",
+        "purpose": "Evaluate experience alignment and career progression",
+        "output": "Experience score (0-100) with relevance analysis"
+      },
+      {
+        "name": "CulturalFitAgent",
+        "purpose": "Assess cultural alignment and adaptability",
+        "output": "Cultural fit score (0-100) with integration potential"
+      },
+      {
+        "name": "ScoringDecisionAgent",
+        "purpose": "Calculate weighted final score and hiring decision",
+        "output": "Final score (0-100) and decision (selected/conditional/under_review/rejected)"
+      },
+      {
+        "name": "ReportGenerationAgent",
+        "purpose": "Generate comprehensive assessment report",
+        "output": "Detailed report with scores, evidence, and recommendations"
+      },
+      {
+        "name": "QualityAssuranceAgent",
+        "purpose": "Validate report quality and completeness",
+        "output": "Quality check and regeneration flag if needed"
+      }
+    ]
+  }
+}

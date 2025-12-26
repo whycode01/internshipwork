@@ -1,0 +1,37 @@
+{
+  "dependencies": [".."],
+  "graphs": {
+    "shopping_workflow": {
+      "path": "shopping_workflow:create_shopping_workflow",
+      "description": "Smart Shopping Assistant - Multi-node AI workflow with dynamic planning, navigation, extraction, and comparison",
+      "config_schema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "default": "laptop under 50000",
+            "description": "Product search query with optional price and specifications"
+          },
+          "search_sites": {
+            "type": "array",
+            "items": {"type": "string"},
+            "default": ["amazon.in", "flipkart.com", "myntra.com", "ajio.com"],
+            "description": "Websites to search on (user-selectable sites)"
+          },
+          "max_products_per_site": {
+            "type": "integer",
+            "default": 5,
+            "description": "Maximum products to extract per site"
+          },
+          "max_retries": {
+            "type": "integer", 
+            "default": 2,
+            "description": "Maximum retry attempts for failed operations"
+          }
+        },
+        "required": ["query"]
+      }
+    }
+  },
+  "env": "../.env"
+}

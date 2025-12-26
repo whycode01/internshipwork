@@ -1,0 +1,26 @@
+{
+  "dependencies": ["."],
+  "graphs": {
+    "question_generation_workflow": "./workflows/simple_workflow.py:create_workflow"
+  },
+  "env": ".env",
+  "dev_mode": true,
+  "config": {
+    "title": "Question Generation Workflow",
+    "description": "LangGraph workflow for generating interview questions using company policies",
+    "policies": [
+      {
+        "name": "CORPORATE FINANCE ANALYST",
+        "content": "INTERVIEW POLICY\nPURPOSE\nTo assess the candidate's financial modeling skills, budgeting capabilities, analytical thinking, and business acumen for financial planning and reporting.\n\nINTERVIEW STRUCTURE\nFinance & Accounting Concepts – 25 minutes\nCase Study or Modeling Round – 30 minutes\nTools & Reporting Assessment – 15 minutes\nBusiness Acumen & Stakeholder Interaction – 10 minutes\n\nCORE COMPETENCIES TO ASSESS\nFinancial planning, forecasting, and analysis (FP&A)\nBudgeting and cost control\nProficiency in Excel, Power BI, SAP, or similar tools\nUnderstanding of financial statements and ratios\nStrategic business impact interpretation\nReport creation for C-suite\n\nSCENARIO-BASED ASSESSMENT\nAnalyzing a P&L variance\nBuilding a quarterly forecast\nInterpreting ROI on a business project\nCommunicating findings to non-finance leaders\n\nMINIMUM REQUIREMENTS\n1–3 years in finance or related field\nBachelor's in Finance, Commerce, or Economics\nFamiliarity with financial models, dashboards, and business reports\n\nRED FLAGS\nPoor spreadsheet or modeling discipline\nInability to explain financial metrics clearly\nLacks business decision-making perspective",
+        "type": "policies",
+        "id": "corporate_finance_analyst_20250729_112019"
+      },
+      {
+        "name": "MARKETING MANAGER",
+        "content": "INTERVIEW POLICY\nPURPOSE\nTo evaluate a candidate's ability to design and execute marketing strategies, manage campaigns, analyze performance metrics, and contribute to brand growth.\n\nINTERVIEW STRUCTURE\nStrategic Marketing Round – 25 minutes\nCampaign Review Exercise – 20 minutes\nAnalytics & Budgeting Assessment – 15 minutes\nSoft Skills & Stakeholder Communication – 15 minutes\n\nCORE COMPETENCIES TO ASSESS\nMarketing planning and execution\nDigital and offline campaign knowledge\nBrand management and audience targeting\nMarketing analytics and ROI tracking\nBudget management and media planning\nCollaboration with design, product, and sales teams\n\nSCENARIO-BASED ASSESSMENT\nDeveloping a product launch campaign\nHandling a campaign failure\nManaging limited-budget promotions\nCommunicating with external agencies\n\nMINIMUM REQUIREMENTS\n3–5 years in a marketing role\nKnowledge of tools like Google Analytics, SEMrush, Meta Ads, HubSpot\nBachelor's in Marketing/Business (MBA preferred)\n\nRED FLAGS\nPoor understanding of performance metrics\nNo clear campaign ownership experience\nLacks collaboration or brand alignment awareness",
+        "type": "policies",
+        "id": "marketing_manager_20250729_110600"
+      }
+    ]
+  }
+}

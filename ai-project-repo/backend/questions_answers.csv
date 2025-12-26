@@ -1,0 +1,21 @@
+Question,Answer
+What is the primary responsibility of the architect in a project?,"The primary responsibility of the architect is to define the overall structure, design principles, and technology stack for the project while ensuring alignment with business goals and technical requirements."
+How do you measure the success of an architectural design?,"Success is measured by performance metrics, scalability, maintainability, security, and alignment with project goals."
+What are the key considerations for selecting trade-offs between different architectural components?,"Trade-offs should consider performance, scalability, cost, complexity, and alignment with business priorities."
+How does the architecture support scalability requirements?,"By implementing load balancing, horizontal scaling, caching strategies, and designing stateless components."
+What are the performance considerations that should be incorporated into the architectural design?,"Considerations include efficient resource allocation, minimizing latency, reducing bottlenecks, and optimizing database queries."
+How do you ensure that the architecture supports maintainability requirements?,"By adhering to modular design principles, writing clean code, and ensuring clear documentation."
+What methods can be used to evaluate the fit-for-purpose of an architectural solution?,"Methods include proof-of-concept development, benchmarking, and load testing."
+How is it possible for the architecture to meet multiple business goals simultaneously?,By designing flexible and modular solutions that accommodate varying business priorities.
+What are the key steps involved in ensuring architectural compliance across the implementation lifecycle?,"Steps include establishing coding standards, conducting design reviews, and implementing automated testing."
+How does the architecture support disaster recovery requirements?,"By implementing backup solutions, failover strategies, and ensuring data replication."
+What approaches can be used to balance innovation with stability in the design?,"Balancing can be achieved through controlled experimentation, phased rollouts, and robust fallback mechanisms."
+How do you ensure that the architecture supports security throughout the development lifecycle?,"By implementing secure coding practices, regular security audits, and penetration testing."
+What techniques can be employed to maintain data integrity during implementation?,"Techniques include data validation, transaction management, and consistent error handling."
+How are assumptions about the future behavior of systems documented and validated?,Assumptions are documented in design artifacts and validated through prototyping and stakeholder review.
+What methods are used to achieve internationalization and localization for an architectural solution?,"Methods include string externalization, Unicode support, and region-specific content delivery."
+How does the architecture support clear and understandable design decisions?,"By maintaining clear documentation, visual diagrams, and decision logs."
+What approaches are used to define boundaries around system or component design?,"By leveraging domain-driven design principles, defining clear API contracts, and identifying key data flows."
+How do you ensure that the architecture addresses user experience requirements?,"By integrating user feedback, conducting usability testing, and applying UI/UX design principles."
+What measures can be taken to ensure cost-effectiveness in the architecture selection process?,"By evaluating cloud costs, using open-source technologies, and adopting serverless or container-based solutions."
+"How is architectural complexity measured, and what factors should be considered?","Complexity is measured by evaluating the number of components, integration points, and dependency chains within the system."

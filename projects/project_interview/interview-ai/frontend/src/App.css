@@ -1,0 +1,168 @@
+/* Fonts & Layout */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Arial, sans-serif;
+  background: linear-gradient(135deg, #f5f9ff 0%, #e7eeff 100%);
+  color: #1c1d21;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
+  /* Added subtle inner shadow for softer look */
+  box-shadow: inset 0 1.5px 9px 0 #e4ebfb;
+}
+
+/* Header */
+.topbar {
+  background: #232947;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2.5px solid #5c76fe;
+  box-shadow: 0 2px 16px 0 rgba(44, 56, 129, 0.08);
+  min-height: 64px;
+}
+
+.logo {
+  font-size: 1.52rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  user-select: none;
+  font-family: 'Montserrat', 'Segoe UI', sans-serif;
+}
+
+/* Main Section */
+.main-container {
+  padding: 2rem 1.3rem;
+  max-width: 700px;
+  margin: 2.5rem auto 0 auto;
+  flex: 1;
+  width: 100vw;
+}
+
+h1 {
+  font-size: 2.18rem;
+  margin-bottom: 0.7rem;
+  color: #232947;
+  letter-spacing: -1px;
+  font-family: 'SF Pro Display', 'Montserrat', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.subtitle {
+  font-size: 1.15rem;
+  color: #4269b0;
+  opacity: 0.9;
+  margin-bottom: 2.2rem;
+  font-family: inherit;
+  letter-spacing: 0.01em;
+}
+
+/* Sleek Neumorphic Transcription Box */
+.output-section {
+  width: 100%;
+  margin: 2.5rem 0 1.2rem 0;
+}
+
+.output-label {
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+  color: #4460ef;
+  letter-spacing: 0.01em;
+  font-size: 1.13em;
+  text-align: left;
+}
+
+.output-box {
+  width: 100%;
+  min-height: 110px;
+  background: linear-gradient(135deg, #eaf0fa 0%, #ffffff 100%);
+  color: #232947;
+  font-size: 1.19rem;
+  border-radius: 22px;
+  border: none;
+  padding: 1.6em 2.1em;
+  box-sizing: border-box;
+  text-align: left;
+  resize: none;
+  box-shadow:
+    0 6px 28px 3px rgba(80,115,230,0.08),
+    4px 4px 16px 0px #e4eaff80,
+    -7px -7px 18px 0px #ffffff;
+  font-family: inherit;
+  margin: 0 auto;
+  transition: box-shadow 0.16s, background 0.2s;
+}
+
+.output-box:focus {
+  outline: none;
+  box-shadow:
+    0 4px 30px #bdd7fc33,
+    0 0 0 3px #5073e62a;
+  background: linear-gradient(135deg, #f5faff 0%, #e7eeff 98%);
+}
+
+/* Keyword Highlight (optional in Transcript) */
+.highlight {
+  background: #eaf4ff;
+  color: #2460e2;
+  border-radius: 6px;
+  padding: 0 4px;
+  font-weight: 600;
+}
+
+/* Footer */
+.footer {
+  background: #232947;
+  color: #aab3d3;
+  font-size: 0.97rem;
+  padding: 1.12rem 0;
+  text-align: center;
+  border-radius: 0;
+  margin-top: auto;
+  box-shadow: 0 -2px 20px 0 #dbe8fc1c;
+}
+
+/* Button */
+button {
+  background: linear-gradient(90deg, #4461ee 0%, #3b84e6 100%);
+  color: #fff;
+  font-size: 1.09rem;
+  letter-spacing: 0.02em;
+  padding: 0.99rem 2.4rem;
+  border: none;
+  border-radius: 14px;
+  margin-bottom: 2.1rem;
+  cursor: pointer;
+  font-weight: 700;
+  font-family: inherit;
+  box-shadow: 0 2px 8px 0 rgba(69,97,238,0.07);
+  transition: background 0.16s, box-shadow 0.15s;
+}
+
+button:hover, button:focus {
+  background: linear-gradient(90deg,#3551b5 0%,#275cc7 100%);
+  box-shadow: 0 6px 22px #5c76fe1f;
+  outline: none;
+}
+
+/* Responsive: Mobile/Tablet */
+@media (max-width: 700px) {
+  .main-container { max-width: 98vw; padding: 1rem 2vw; }
+  .output-box { font-size: 1.04rem; padding: 1.1em 1.2em; min-height: 90px; }
+  .output-section { margin: 1.4rem 0 0.9rem 0; }
+  h1       { font-size: 1.45rem; }
+  .subtitle { font-size: 1em; }
+  button   { font-size: 0.99rem; padding: 0.8rem 1.5rem; }
+}

@@ -1,0 +1,7 @@
+fastmcp
+langchain
+requests
+pytz
+python-dotenv
+newsapi-python
+groq

@@ -1,0 +1,68 @@
+{
+  "interview_id": "b0784377-c6f4-4f86-a093-6c816bf12849",
+  "meeting_id": "tibv-d1ph-2b1j",
+  "start_time": "2025-09-14T11:49:46.379090+00:00",
+  "job_id": "5",
+  "candidate_id": "26",
+  "end_time": "2025-09-14T11:50:56.420773+00:00",
+  "duration_total": 70.041683,
+  "participants": [
+    "Interviewer",
+    "User"
+  ],
+  "entries": [
+    {
+      "speaker": "System",
+      "message": "Interview started",
+      "timestamp": "11:49:46",
+      "duration_seconds": 2.2e-05,
+      "confidence": null,
+      "message_type": "system"
+    },
+    {
+      "speaker": "System",
+      "message": "User joined the interview",
+      "timestamp": "11:49:48",
+      "duration_seconds": 1.705106,
+      "confidence": null,
+      "message_type": "system"
+    },
+    {
+      "speaker": "Interviewer",
+      "message": "Hello! I'm Interviewer. Let's begin with our first question: Can you describe a situation where you had to analyze a complex financial problem and present your findings to a non-technical audience? How did you approach this task and what tools did you use?",
+      "timestamp": "11:49:56",
+      "duration_seconds": 9.697664,
+      "confidence": null,
+      "message_type": "speech"
+    },
+    {
+      "speaker": "User",
+      "message": "Can you repeat it? I was unable to hear it.",
+      "timestamp": "11:50:18",
+      "duration_seconds": 32.346638,
+      "confidence": null,
+      "message_type": "speech"
+    },
+    {
+      "speaker": "User",
+      "message": "Can you ask me something else? I don't know this.",
+      "timestamp": "11:50:39",
+      "duration_seconds": 53.186847,
+      "confidence": null,
+      "message_type": "speech"
+    },
+    {
+      "speaker": "System",
+      "message": "Interview ended",
+      "timestamp": "11:50:56",
+      "duration_seconds": 70.041499,
+      "confidence": null,
+      "message_type": "system"
+    }
+  ],
+  "metadata": {
+    "agent_name": "Interviewer",
+    "job_id": "5",
+    "candidate_id": "26"
+  }
+}

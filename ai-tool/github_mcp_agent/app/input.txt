@@ -1,0 +1,5 @@
+List commits for owner=whycode01 repo=Employee-Mangemnet-System
+
+Show all repositories in my GitHub account
+List all repositories I own
+Find all repos from user:whycode01

@@ -1,0 +1,138 @@
+{
+  "name": "Lead gen agent",
+  "nodes": [
+    {
+      "parameters": {
+        "url": "https://api.apify.com/v2/datasets/AZWTwcubvLQ8iKPbW/items?token=YOUR_APIFY_API_TOKEN",
+        "options": {}
+      },
+      "id": "e6646555-707e-44fd-a5b1-a91bb2c03cd0",
+      "name": "Fetch LinkedIn Leads",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 1,
+      "position": [
+        520,
+        200
+      ]
+    },
+    {
+      "parameters": {
+        "functionCode": "let message = \"Here are the latest LinkedIn Job Leads:\\n\\n\";\n\nitems.forEach((item, index) => {\n  const data = item.json;\n\n  message += `Job ${index + 1}:\\n`;\n  message += `ID: ${data.id || \"N/A\"}\\n`;\n  message += `Published At: ${data.publishedAt || \"N/A\"}\\n`;\n  message += `Salary: ${data.salary || \"N/A\"}\\n`;\n  message += `Applications Count: ${data.applicationsCount || \"N/A\"}\\n`;\n  message += `Description: ${(data.description || \"\").slice(0, 400)}...\\n`;\n  message += `Contract Type: ${data.contractType || \"N/A\"}\\n`;\n  message += `Experience Level: ${data.experienceLevel || \"N/A\"}\\n`;\n  message += `Work Type: ${data.workType || \"N/A\"}\\n`;\n  message += `Sector: ${data.sector || \"N/A\"}\\n`;\n  message += `Apply URL: ${data.applyUrl || \"N/A\"}\\n`;\n  message += `Apply Type: ${data.applyType || \"N/A\"}\\n`;\n  message += `Company ID: ${data.companyId || \"N/A\"}\\n\\n`;\n});\n\nreturn [{\n  json: {\n    email: \"spacexdragon2004@gmail.com\",\n    message: message\n  }\n}];\n"
+      },
+      "id": "54cfda44-72b2-4d18-bef8-f005371b9495",
+      "name": "Format Message",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [
+        960,
+        200
+      ]
+    },
+    {
+      "parameters": {
+        "resource": "message",
+        "subject": "Latest LinkedIn Job Leads",
+        "message": "={{ $json.message }}",
+        "toList": [
+          "={{ $json.email }}"
+        ],
+        "additionalFields": {}
+      },
+      "id": "146f0a61-fa04-469e-9371-73adc4410170",
+      "name": "Send Gmail",
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 1,
+      "position": [
+        1140,
+        200
+      ],
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "TbEh8tz9K2ERn0lO",
+          "name": "Gmail account 2"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        260,
+        200
+      ],
+      "id": "b4fa66bf-f568-4c37-b7da-8af91e7c783e",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "jsCode": "// item.json is the whole array returned from the API\nconst jobsArray = items[0].json;\n\nreturn jobsArray.map(job => ({ json: job }));\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        740,
+        200
+      ],
+      "id": "f5fc9ce8-b483-4f8b-840d-1c12713f4c32",
+      "name": "Code"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Fetch LinkedIn Leads": {
+      "main": [
+        [
+          {
+            "node": "Code",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Format Message": {
+      "main": [
+        [
+          {
+            "node": "Send Gmail",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Fetch LinkedIn Leads",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code": {
+      "main": [
+        [
+          {
+            "node": "Format Message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "57c52460-6cd2-4dfb-939e-ed4ff4bab819",
+  "meta": {
+    "instanceId": "57ed52f50010b9553de6a81c4723ae368cf3d67f3ccde9b975838b349e349af4"
+  },
+  "id": "xIEdKDx20BN78SaI",
+  "tags": []
+}

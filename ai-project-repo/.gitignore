@@ -1,0 +1,19 @@
+# Ignore environment files
+.env
+.venv
+
+# Ignore Python bytecode files
+**/__pycache__/
+*.pyc
+
+# Ignore uploaded files
+test_folder/uploaded_files/*
+
+# Ignore storage folder
+backend/storage/*
+lab_reviews.db
+nikita/
+test_folder/
+
+**audit-ai
+audit-ai/temp.py

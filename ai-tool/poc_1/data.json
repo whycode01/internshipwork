@@ -1,0 +1,82 @@
+{
+  "invoice_number": "INV-2025-001234",
+  "purchase_order_number": "PO-2025-789456",
+  "purchase_order_creation_date": "2025-10-15",
+  "contract_person_name": "Rajesh Kumar",
+  "invoice_amount": 1250000.00,
+  "currency": "INR",
+  "customer_name": "Tech Solutions Pvt Ltd",
+  "bill_to_address": {
+    "street": "123, MG Road, Cyber City",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "country": "India",
+    "postal_code": "560001"
+  },
+  "ship_to_address": {
+    "street": "456, Sector 18, IT Park",
+    "city": "Gurgaon",
+    "state": "Haryana",
+    "country": "India",
+    "postal_code": "122001"
+  },
+  "sales_order_number": "SO-2025-456789",
+  "contracting_parties": {
+    "vendor": {
+      "name": "Global IT Services Ltd",
+      "registration_number": "CIN-U72900KA2020PTC134567",
+      "address": "789, Embassy Tech Village, Bangalore, Karnataka, India"
+    },
+    "customer": {
+      "name": "Tech Solutions Pvt Ltd",
+      "registration_number": "CIN-U72200DL2018PTC345678",
+      "address": "123, MG Road, Cyber City, Bangalore, Karnataka, India"
+    }
+  },
+  "work_order_start_date": "2025-11-01",
+  "work_order_end_date": "2026-10-31",
+  "authorized_signatory": {
+    "vendor_signatory": {
+      "name": "Mr. Arun Sharma",
+      "designation": "Chief Operating Officer",
+      "email": "arun.sharma@globalit.com"
+    },
+    "customer_signatory": {
+      "name": "Ms. Priya Desai",
+      "designation": "Head of Procurement",
+      "email": "priya.desai@techsolutions.com"
+    }
+  },
+  "key_deliverables": [
+    {
+      "deliverable_id": "D001",
+      "description": "AI-powered Customer Support System Development",
+      "delivery_date": "2025-12-31",
+      "status": "In Progress"
+    },
+    {
+      "deliverable_id": "D002",
+      "description": "Integration with existing CRM platform",
+      "delivery_date": "2026-02-28",
+      "status": "Planned"
+    },
+    {
+      "deliverable_id": "D003",
+      "description": "Staff Training and Documentation",
+      "delivery_date": "2026-04-30",
+      "status": "Planned"
+    },
+    {
+      "deliverable_id": "D004",
+      "description": "3 months Post-Deployment Support",
+      "delivery_date": "2026-07-31",
+      "status": "Planned"
+    },
+    {
+      "deliverable_id": "D005",
+      "description": "Performance Optimization and Testing",
+      "delivery_date": "2026-10-15",
+      "status": "Planned"
+    }
+  ]
+}

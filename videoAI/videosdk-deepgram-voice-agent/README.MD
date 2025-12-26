@@ -1,0 +1,77 @@
+# AI Copilot with VideoSDK & Deepgram
+
+This project is an AI Voice Agent that uses VideoSDK for video conferencing, Deepgram for speech-to-text (STT), and Groq for language model (LLM) capabilities. The AI Copilot can join meetings, transcribe speech, and respond intelligently.
+
+![videoSDK + Deepgram Integration](https://assets.videosdk.live/images/videosdk-dg-integration.png)
+
+### Start with the project
+
+```sh
+git clone https://github.com/videosdk-community/videosdk-deepgram-voice-agent
+```
+
+```sh
+cd videosdk-deepgram-voice-agent
+```
+
+### Client Setup
+
+1. Navigate to `client` dir:
+   ```sh
+   cd client
+   ```
+2. Make a copy of the environment configuration file:
+   ```sh
+   cp .env.example .env
+   ```
+3. Set the `VITE_APP_AUTH_TOKEN` in the `.env` file with your VideoSDK auth token from [app.videosdk.live](https://app.videosdk.live).
+
+### Python Setup
+
+1. Configure the following environment variables in the `.env` file:
+
+   ```sh
+   ROOM_ID=...
+   AUTH_TOKEN=...  # (app.videosdk.live)
+   LANGUAGE=...
+
+   DEEPGRAM_API_KEY=...  # (console.deepgram.com)
+   GROQ_API_KEY=...  # (console.groq.com)
+   ```
+
+2. Create a virtual environment:
+   ```sh
+   python -m venv venv
+   ```
+3. Activate the virtual environment:
+   - On Unix or MacOS:
+     ```sh
+     source venv/bin/activate
+     ```
+   - On Windows:
+     ```sh
+     .\venv\Scripts\activate
+     ```
+
+### Generate a Room ID
+
+Generate a room ID on the client side and add it to the Python configuration. This can be done by running the client application and using the generated room ID in the `.env` file for the Python setup.
+
+For more information, check out [docs.videosdk.live](https://docs.videosdk.live).
+
+
+
+# Python Programming Interview
+python main.py questions/python_programming_questions.md
+
+# AI/ML/NLP Interview  
+python main.py questions/NLP.md
+
+# Data Structures & Algorithms Interview
+python main.py questions/dsa_questions.md
+
+# General Software Engineering Interview
+python main.py questions/swe_interview_questions.md
+
+# Default Questions (uses built-in questions)
+python main.py

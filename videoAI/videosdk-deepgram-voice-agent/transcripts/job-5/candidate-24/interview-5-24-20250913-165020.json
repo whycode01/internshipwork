@@ -1,0 +1,60 @@
+{
+  "interview_id": "92803f0c-e88a-4538-a278-493c0e91b8c1",
+  "meeting_id": "obm0-yqkn-6baj",
+  "start_time": "2025-09-13T11:19:18.276217+00:00",
+  "job_id": "5",
+  "candidate_id": "24",
+  "end_time": "2025-09-13T11:20:20.974239+00:00",
+  "duration_total": 62.698022,
+  "participants": [
+    "Interviewer",
+    "User"
+  ],
+  "entries": [
+    {
+      "speaker": "System",
+      "message": "Interview started",
+      "timestamp": "11:19:18",
+      "duration_seconds": 3.4e-05,
+      "confidence": null,
+      "message_type": "system"
+    },
+    {
+      "speaker": "System",
+      "message": "User joined the interview",
+      "timestamp": "11:19:19",
+      "duration_seconds": 1.047681,
+      "confidence": null,
+      "message_type": "system"
+    },
+    {
+      "speaker": "Interviewer",
+      "message": "Hello! I'm Interviewer. Let's begin with our first question: Can you describe a situation where you had to analyze financial data to inform a business decision? How did you ensure the accuracy and reliability of your analysis?",
+      "timestamp": "11:19:27",
+      "duration_seconds": 9.109507,
+      "confidence": null,
+      "message_type": "speech"
+    },
+    {
+      "speaker": "User",
+      "message": "I didn't listen you. Can you repeat it?",
+      "timestamp": "11:19:52",
+      "duration_seconds": 34.0055,
+      "confidence": null,
+      "message_type": "speech"
+    },
+    {
+      "speaker": "System",
+      "message": "Interview ended",
+      "timestamp": "11:20:20",
+      "duration_seconds": 62.697574,
+      "confidence": null,
+      "message_type": "system"
+    }
+  ],
+  "metadata": {
+    "agent_name": "Interviewer",
+    "job_id": "5",
+    "candidate_id": "24"
+  }
+}

@@ -1,0 +1,8 @@
+agent-squad[all]
+groq
+python-dotenv
+groq
+python-dotenv
+pytz
+requests
+newsapi-python

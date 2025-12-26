@@ -1,0 +1,52 @@
+[
+  {
+    "provider": "AWS",
+    "isSelected": false,
+    "configJson": {
+      "provider": "string",
+      "model": "Bedrock",
+      "endpoint": "beanstalk",
+      "apiKey": "string"
+    }
+  },
+  {
+    "provider": "Ollama",
+    "isSelected": false,
+    "configJson": {
+      "provider": "string",
+      "model": "llama3.2:1b",
+      "endpoint": "llama3,2",
+      "apiKey": "string"
+    }
+  },
+  {
+    "provider": "GROQ",
+    "isSelected": true,
+    "configJson": {
+      "provider": "string",
+      "model": "llama-3.3-70b-versatile",
+      "endpoint": "https://api.groq.com/openai/v1/models",
+      "apiKey": "YOUR_GROQ_API_KEY"
+    }
+  },
+  {
+    "provider": "GCP",
+    "isSelected": false,
+    "configJson": {
+      "provider": "google",
+      "model": "gemma3",
+      "endpoint": "https:chat/completions?api-version=2023-05-15",
+      "apiKey": "AhEWD7DFqWmHOYUvNzFo3JJQQJ99BBACYeBjFXJ3w3AAABACOGpTlK"
+    }
+  },
+  {
+    "provider": "Azure",
+    "isSelected": false,
+    "configJson": {
+      "provider": "openai",
+      "model": "o-mini",
+      "endpoint": "https:chat/completions?api-version=2023-05-15",
+      "apiKey": "AhEWD7DFqWmHOYUvNzFo3JJQQJ99BBACYeBjFXJ3w3AAABACOGpTlK"
+    }
+  }
+]
